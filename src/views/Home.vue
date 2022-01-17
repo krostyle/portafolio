@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+    <Navbar :profileImage="profileImage"/>
+  </main>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Navbar from '@/components/Navbar.vue'
+import axios from 'axios'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Navbar
+  },
+  data() {
+    return{
+      profileData:{},
+      profileImage:''
+    }    
+  },
+  methods:{
+    async getProfileData(){
+      const {data} = await axios.get('https://api.github.com/users/krostyle');
+      return data;
+    }
+  },
+  async created() {
+    this.profileData=await this.getProfileData();
+    this.profileImage=this.profileData.avatar_url;    
   }
 }
 </script>
