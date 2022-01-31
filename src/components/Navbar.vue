@@ -17,7 +17,7 @@
           class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex-shrink-0 flex items-center">
-            <h1 class="text-white text-base font-medium">Diego Bustamante</h1>
+            <h1 class="text-white text-xl font-medium">Diego Bustamante</h1>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
@@ -40,34 +40,19 @@
         <div
           class="absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
-          <!-- Profile dropdown -->
-          <Menu as="div" class="ml-3 relative">
-            <div>
-              <MenuButton
-                class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-              >
-                <span class="sr-only">Open user menu</span>
-                <img
-                  class="h-8 w-8 rounded-full"
-                  :src="profileImage"
-                  alt="profile image"
-                />
-              </MenuButton>
-            </div>
-            <transition
-              enter-active-class="transition ease-out duration-100"
-              enter-from-class="transform opacity-0 scale-95"
-              enter-to-class="transform opacity-100 scale-100"
-              leave-active-class="transition ease-in duration-75"
-              leave-from-class="transform opacity-100 scale-100"
-              leave-to-class="transform opacity-0 scale-95"
-            >
-            </transition>
-          </Menu>
+          <!-- Profile Image -->
+          <div
+            class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+          >
+            <img
+              class="h-8 w-8 rounded-full"
+              :src="profileImage"
+              alt="profile image"
+            />
+          </div>
         </div>
       </div>
     </div>
-
     <DisclosurePanel class="sm:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <DisclosureButton
@@ -101,13 +86,6 @@ import {
 } from "@headlessui/vue";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/vue/outline";
 
-const navigation = [
-  { name: "Sobre Mi", href: "#", current: true },
-  { name: "Skills", href: "#", current: false },
-  { name: "Proyectos", href: "#", current: false },
-  { name: "Contacto", href: "#", current: false },
-];
-
 export default {
   props: ["profileImage"],
   components: {
@@ -122,9 +100,14 @@ export default {
     MenuIcon,
     XIcon,
   },
-  setup() {
+  data() {
     return {
-      navigation,
+      navigation: [
+        { name: "Sobre Mi", href: "#", current: true },
+        { name: "Skills", href: "#", current: false },
+        { name: "Proyectos", href: "#", current: false },
+        { name: "Contacto", href: "#", current: false },
+      ],
     };
   },
 };
