@@ -16,26 +16,25 @@
           nuevas tecnologías y herramientas.
         </p>
         <p class="text-gray-700 my-1 text-justify">
-          Actualmente me encuentro cursando un diplmado de Arquitectura Cloud de
-          AWS en La Universidad de Santiago de Chile.
+          Actualmente me encuentro cursando un diplomado de Arquitectura Cloud
+          de AWS en La Universidad de Santiago de Chile.
         </p>
 
-        <hr />
+        <br />
         <p class="text-gray-700 mt-6 text-justify">
-          Tengo conocimientos en diversas tecnologias y herramientas de
-          desarrollo, tales como, C#, Java, Javascript, Python, NodeJS, VueJS,
-          Servicios en la nube de AWS y Google Cloud Platform, Bases de datos
-          relacionales y no relacioneles como PostgreSQL, MongoDB, Oracle y
-          Firebase.
+          Tengo conocimientos en diversas tecnologias, tales como : C#, Java,
+          Javascript, Python, NodeJS, VueJS, Servicios en la nube de AWS, Bases
+          de datos relacionales y no relacioneles como PostgreSQL, MongoDB,
+          Oracle y Firebase.
         </p>
         <p class="text-gray-700 my-2 text-justify">
-          Pero podría decir, que me especializo en Javascript En el backend,
+          Pero podría decir, que me especializo en Javascript. En el backend,
           utilizo NodeJS con ExpressJS, y en el frontend, utilizo VueJS. Para la
           base de datos utilizo MongoDB y/o PostgreSQL.
         </p>
         <p class="text-gray-700 my-2 text-justify">
           También tengo conocimientos en herramientas de desarrollo como,
-          Docker, Git, Github, Jira, Slack, Trello, etc.
+          Docker, Git, Github, Jira, etc.
         </p>
         <p class="text-gray-700 my-2 text-justify">
           Adicionalmente, manejo muy buenas relaciones interpersonales , me
@@ -46,10 +45,10 @@
           comprometida.
         </p>
         <p class="text-gray-700 my-2 text-justify">
-          Finalmente , datos que nadie pidío, Me encanta la música , desde Amar
-          Azul , hasta Dream Theater , pasando por Iron Maiden y Juan Luis
-          Guerra. Disfruto mucho de andar en bicicleta, y de la naturaleza. Me
-          apasiona la cocina , y la gastronomía.
+          Finalmente , datos random que nadie pidío, Me encanta la música ,
+          desde Amar Azul , hasta Dream Theater , pasando por Iron Maiden y Juan
+          Luis Guerra. Disfruto mucho de andar en bicicleta, y de la naturaleza.
+          Me apasiona la cocina , y la gastronomía.
         </p>
       </div>
     </div>
