@@ -1,7 +1,7 @@
 <template>
   <main>
-    <Navbar :profileImage="profileImage"></Navbar>
-    <AboutMe></AboutMe>
+    <Navbar></Navbar>
+    <AboutMe :profileImage="profileImage"></AboutMe>
   </main>
 </template>
 

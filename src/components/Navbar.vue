@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <Disclosure as="nav" class="bg-gray-800" v-slot="{ close }">
+  <Disclosure as="nav" class="bg-gray-900" v-slot="{ close }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -14,10 +14,12 @@
           </DisclosureButton>
         </div>
         <div
-          class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+          class="flex-1 flex items-center justify-left sm:items-stretch sm:justify-start"
         >
           <div class="flex-shrink-0 flex items-center">
-            <h1 class="text-white text-xl font-medium">Diego Bustamante</h1>
+            <h1 class="text-white text-xl font-medium">
+              <a href="/">Diego Bustamante</a>
+            </h1>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
@@ -44,11 +46,11 @@
           <div
             class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
           >
-            <img
+            <!-- <img
               class="h-8 w-8 rounded-full"
               :src="profileImage"
               alt="profile image"
-            />
+            /> -->
           </div>
         </div>
       </div>
@@ -87,7 +89,6 @@ import {
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/vue/outline";
 
 export default {
-  props: ["profileImage"],
   components: {
     Disclosure,
     DisclosureButton,
