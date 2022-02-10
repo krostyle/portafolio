@@ -3,7 +3,10 @@
     <h1 class="text-center text-indigo-900 text-4xl font-bold">Sobre Mí</h1>
     <div class="grid grid-cols-1 gap-6">
       <div class="flex my-8 justify-center">
-        <img :src="profileImage" class="rounded-full w-64 h-64" />
+        <img
+          :src="profileImage"
+          class="rounded-full w-48 h-48 md:w-64 md:h-64"
+        />
       </div>
       <div class="container px-6">
         <h1 class="text-center text-indigo-900 text-2xl font-bold my-4">
