@@ -2,6 +2,7 @@
   <main>
     <Navbar></Navbar>
     <AboutMe :profileImage="profileImage"></AboutMe>
+    <Skills></Skills>
   </main>
 </template>
 
@@ -9,6 +10,7 @@
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
 import AboutMe from "@/components/AboutMe.vue";
+import Skills from "@/components/Skills.vue";
 import axios from "axios";
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     Navbar,
     AboutMe,
+    Skills,
   },
   data() {
     return {

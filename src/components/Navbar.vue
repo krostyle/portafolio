@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <Disclosure as="nav" class="bg-gray-900" v-slot="{ close }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -42,16 +41,9 @@
         <div
           class="absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
-          <!-- Profile Image -->
           <div
             class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-          >
-            <!-- <img
-              class="h-8 w-8 rounded-full"
-              :src="profileImage"
-              alt="profile image"
-            /> -->
-          </div>
+          ></div>
         </div>
       </div>
     </div>
@@ -87,8 +79,11 @@ import {
   MenuItems,
 } from "@headlessui/vue";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/vue/outline";
+import axios from "axios";
 
 export default {
+  name: "Navbar",
+  props: {},
   components: {
     Disclosure,
     DisclosureButton,
@@ -109,7 +104,25 @@ export default {
         { name: "Proyectos", href: "#", current: false },
         { name: "Contacto", href: "#", current: false },
       ],
+      downloadURLCV: "",
+      open: false,
     };
+  },
+  methods: {
+    async getUrlCurriculum() {
+      const { data } = await axios.get(
+        "https://api.github.com/repositories/448766758/contents/public/docs"
+      );
+      return data[0].download_url;
+    },
+  },
+  async created() {
+    this.downloadURLCV = await this.getUrlCurriculum();
+    this.navigation.push({
+      name: "Descargar CV",
+      href: `${this.downloadURLCV}`,
+      current: false,
+    });
   },
 };
 </script>
