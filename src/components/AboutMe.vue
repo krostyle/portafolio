@@ -31,13 +31,14 @@
           Oracle y Firebase.
         </p>
         <p class="text-gray-700 my-2 text-justify">
-          Pero podría decir, que me especializo en Javascript. En el backend,
-          utilizo NodeJS con ExpressJS, y en el frontend, utilizo VueJS. Para la
-          base de datos utilizo MongoDB y/o PostgreSQL.
+          Pero, podría decir, que me especializo en Javascript. Generalmente
+          para el bakcend, utilizo NodeJS con Express, y para frontend, utilizo
+          VueJS. Las bases de datos que usualmente utilizo son MongoDB y/o
+          PostgreSQL.
         </p>
         <p class="text-gray-700 my-2 text-justify">
-          También tengo conocimientos en herramientas de desarrollo como,
-          Docker, Git, Github, Jira, etc.
+          También tengo conocimientos en herramientas de desarrollo y la Nube
+          como, Docker, Git, Github y en los servicios de AWS.
         </p>
         <p class="text-gray-700 my-2 text-justify">
           Adicionalmente, manejo muy buenas relaciones interpersonales , me
@@ -48,10 +49,8 @@
           comprometida.
         </p>
         <p class="text-gray-700 my-2 text-justify">
-          Finalmente , datos random que nadie pidío, Me encanta la música ,
-          desde Amar Azul , hasta Dream Theater , pasando por Iron Maiden y Juan
-          Luis Guerra. Disfruto mucho de andar en bicicleta, y de la naturaleza.
-          Me apasiona la cocina , y la gastronomía.
+          Disfruto mucho de andar en bicicleta y jugar a la pelota (futbolito).
+          Me encanta la gastronmía.
         </p>
       </div>
     </div>
