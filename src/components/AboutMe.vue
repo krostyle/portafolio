@@ -9,7 +9,7 @@
         />
       </div>
       <div class="container px-6">
-        <h1 class="text-center text-gray-900 text-2xl font-bold my-4">
+        <h1 class="text-center text-emerald-900 text-2xl font-bold my-4">
           Hola! Mi nombre es <br />
         </h1>
         <h1 class="text-center text-indigo-900 text-2xl font-bold my-4">
