@@ -9,8 +9,11 @@
         />
       </div>
       <div class="container px-6">
+        <h1 class="text-center text-gray-900 text-2xl font-bold my-4">
+          Hola! Mi nombre es <br />
+        </h1>
         <h1 class="text-center text-indigo-900 text-2xl font-bold my-4">
-          Hola! Mi nombre es Diego Andrés Bustamante Albarrán
+          Diego Andrés Bustamante Albarrán
         </h1>
         <p class="text-gray-700 my-1 text-justify">
           Soy desarrollador de software y actualmente vivo en Santiago de Chile.
