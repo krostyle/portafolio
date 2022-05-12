@@ -8,7 +8,7 @@
           class="rounded-full w-48 h-48 md:w-64 md:h-64"
         />
       </div>
-      <h1 class="text-center text-rose-500 text-3xl font-bold">
+      <h1 class="text-center text-purple-500 text-3xl font-bold">
         Hola! Mi nombre es <br />
       </h1>
       <h1 class="text-center text-indigo-900 text-2xl font-bold">
