@@ -1,20 +1,21 @@
 <template>
   <div class="container my-6 mx-auto">
-    <h1 class="text-center text-indigo-900 text-4xl font-bold">Sobre Mí</h1>
-    <div class="grid grid-cols-1 gap-6">
-      <div class="flex my-8 justify-center">
+    <h1 class="text-center text-gray-900 text-4xl font-bold">Sobre Mí</h1>
+    <div class="grid grid-cols-1 gap-2">
+      <div class="flex my-4 justify-center">
         <img
           :src="profileImage"
           class="rounded-full w-48 h-48 md:w-64 md:h-64"
         />
       </div>
+      <h1 class="text-center text-rose-500 text-3xl font-bold">
+        Hola! Mi nombre es <br />
+      </h1>
+      <h1 class="text-center text-indigo-900 text-2xl font-bold">
+        Diego Andrés Bustamante Albarrán
+      </h1>
+
       <div class="container px-6">
-        <h1 class="text-center text-emerald-900 text-2xl font-bold my-4">
-          Hola! Mi nombre es <br />
-        </h1>
-        <h1 class="text-center text-indigo-900 text-2xl font-bold my-4">
-          Diego Andrés Bustamante Albarrán
-        </h1>
         <p class="text-gray-700 my-1 text-justify">
           Soy desarrollador de software y actualmente vivo en Santiago de Chile.
           Me considero una persona apasionada por la tecnología y la innovación.
@@ -52,8 +53,8 @@
           comprometida.
         </p>
         <p class="text-gray-700 my-2 text-justify">
-          Disfruto mucho de andar en bicicleta y jugar a la pelota (futbolito).
-          Me encanta la gastronmía.
+          Disfruto mucho de andar en bicicleta y jugar a la pelota (futbolito) y
+          me encanta la gastronmía.
         </p>
       </div>
     </div>

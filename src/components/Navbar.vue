@@ -1,5 +1,5 @@
 <template>
-  <Disclosure as="nav" class="bg-gray-900" v-slot="{ close }">
+  <Disclosure as="nav" class="bg-gray-900" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -78,7 +78,7 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/vue";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/vue/outline";
+import { MenuIcon, XIcon } from "@heroicons/vue/solid";
 import axios from "axios";
 
 export default {
@@ -92,7 +92,6 @@ export default {
     MenuButton,
     MenuItem,
     MenuItems,
-    BellIcon,
     MenuIcon,
     XIcon,
   },
@@ -101,7 +100,6 @@ export default {
       navigation: [
         { name: "Sobre Mi", href: "#", current: true },
         { name: "Skills", href: "#", current: false },
-        { name: "Proyectos", href: "#", current: false },
         { name: "Contacto", href: "#", current: false },
       ],
       downloadURLCV: "",

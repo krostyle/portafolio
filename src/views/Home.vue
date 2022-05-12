@@ -3,6 +3,7 @@
     <Navbar></Navbar>
     <AboutMe :profileImage="profileImage"></AboutMe>
     <Skills></Skills>
+    <Contact></Contact>
   </main>
 </template>
 
@@ -11,6 +12,7 @@
 import Navbar from "@/components/Navbar.vue";
 import AboutMe from "@/components/AboutMe.vue";
 import Skills from "@/components/Skills.vue";
+import Contact from "@/components/Contact.vue";
 import axios from "axios";
 
 export default {
@@ -19,6 +21,7 @@ export default {
     Navbar,
     AboutMe,
     Skills,
+    Contact,
   },
   data() {
     return {
