@@ -110,9 +110,9 @@ export default {
   data() {
     return {
       navigation: [
-        { name: "Sobre Mi", href: "#aboutme", current: true, download: false },
-        { name: "Skills", href: "#skills", current: false, download: false },
-        { name: "Contacto", href: "#contact", current: false, download: false },
+        { name: "Sobre Mi", href: "#aboutme", current: true },
+        { name: "Habilidades", href: "#skills", current: false },
+        { name: "Contacto", href: "#contact", current: false },
       ],
       downloadURLCV: "",
       open: false,
