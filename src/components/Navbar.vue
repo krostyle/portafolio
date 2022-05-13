@@ -1,5 +1,5 @@
 <template>
-  <Disclosure as="nav" class="bg-gray-900" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-gray-900 sticky top-0" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -25,7 +25,9 @@
               <a
                 v-for="item in navigation"
                 :key="item.name"
+                v-smooth-scroll
                 :href="item.href"
+                :download="item.download"
                 :class="[
                   item.current
                     ? 'bg-gray-900 text-white'
@@ -34,6 +36,11 @@
                 ]"
                 :aria-current="item.current ? 'page' : undefined"
                 >{{ item.name }}</a
+              >
+              <a
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                :href="downloadURLCV"
+                >Descargar CV</a
               >
             </div>
           </div>
@@ -49,10 +56,10 @@
     </div>
     <DisclosurePanel class="sm:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <DisclosureButton
+        <a
           v-for="item in navigation"
+          v-smooth-scroll
           :key="item.name"
-          as="a"
           :href="item.href"
           :class="[
             item.current
@@ -61,7 +68,12 @@
             'block px-3 py-2 rounded-md text-base font-medium',
           ]"
           :aria-current="item.current ? 'page' : undefined"
-          >{{ item.name }}</DisclosureButton
+          >{{ item.name }}</a
+        >
+        <a
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          :href="downloadURLCV"
+          >Descargar CV</a
         >
       </div>
     </DisclosurePanel>
@@ -78,7 +90,7 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/vue";
-import { MenuIcon, XIcon } from "@heroicons/vue/solid";
+import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 import axios from "axios";
 
 export default {
@@ -98,9 +110,9 @@ export default {
   data() {
     return {
       navigation: [
-        { name: "Sobre Mi", href: "#", current: true },
-        { name: "Skills", href: "#", current: false },
-        { name: "Contacto", href: "#", current: false },
+        { name: "Sobre Mi", href: "#aboutme", current: true, download: false },
+        { name: "Skills", href: "#skills", current: false, download: false },
+        { name: "Contacto", href: "#contact", current: false, download: false },
       ],
       downloadURLCV: "",
       open: false,
@@ -116,11 +128,6 @@ export default {
   },
   async created() {
     this.downloadURLCV = await this.getUrlCurriculum();
-    this.navigation.push({
-      name: "Descargar CV",
-      href: `${this.downloadURLCV}`,
-      current: false,
-    });
   },
 };
 </script>
