@@ -17,7 +17,7 @@
         >
           <div class="flex-shrink-0 flex items-center">
             <h1 class="text-white text-xl font-medium">
-              <a href="/">Diego Bustamante</a>
+              <a href="#aboutme">Diego Bustamante</a>
             </h1>
           </div>
           <div class="hidden sm:block sm:ml-6">
